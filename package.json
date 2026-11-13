@@ -1,0 +1,23 @@
+{
+  "name": "devsecops-access-control",
+  "version": "1.0.0",
+  "description": "DineDesk API: authentication, RBAC, branch-level authorization and secrets management",
+  "main": "src/server.js",
+  "private": true,
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --env-file=.env src/server.js",
+    "test": "jest --runInBand --verbose"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  },
+  "jest": { "testEnvironment": "node" }
+}
